@@ -1,7 +1,12 @@
-// import Image from "next/image";
+import { Card } from "@/components/ui/card";
+import Navbar from "./Components/Navbar";
 
 export default function Home() {
   return (
-    <div className="home font-bold text-3xl mx-auto w-full text-center">Main Page</div>
+    <section className="m-5">
+      <Card>
+        <Navbar />
+      </Card>
+    </section>
   );
 }
