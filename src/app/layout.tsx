@@ -4,9 +4,10 @@ import "./globals.css";
 import { ThemeProvider } from "@/components/theme-provider";
 
 
-const poppins  = Poppins({
+const poppins = Poppins({
   variable: "--font-poppins",
-  weight: [ "100", "200", "300", "400", "500", "600", "700", "800", "900"]
+  weight: [ "100", "200", "300", "400", "500", "600", "700", "800", "900"],
+  subsets: ["latin", "latin-ext"] // Add this line
 });
 
 export const metadata: Metadata = {
@@ -20,10 +21,9 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" suppressHydrationWarning>
       <body
-        className={`${poppins.variable} antialiased`}
-        suppressHydrationWarning
+        className={`${poppins.variable} antialiased`}        
       >
         <ThemeProvider
           attribute="class"
