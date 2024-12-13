@@ -1,5 +1,6 @@
 import { Card } from "@/components/ui/card";
 import Navbar from "./Components/Navbar";
+import StatsCard from "./Components/StatsCard";
 
 export default function Home() {
   return (
@@ -7,6 +8,7 @@ export default function Home() {
       <Card>
         <Navbar />
       </Card>
+      <StatsCard />
     </section>
   );
 }
