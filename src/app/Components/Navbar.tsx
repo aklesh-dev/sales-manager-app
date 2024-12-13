@@ -2,9 +2,9 @@
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import React from "react";
-import { CiLight } from "react-icons/ci";
 import { FaShoppingBag } from "react-icons/fa";
 import { IoIosAdd } from "react-icons/io";
+import { ModeToggle } from "../ModeToggle";
 
 const Navbar = () => {
   return (
@@ -30,7 +30,7 @@ const Navbar = () => {
           </div>
         </div>
 
-        <CiLight />
+        <ModeToggle />
       </div>
     </section>
   );
